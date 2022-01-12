@@ -1,5 +1,8 @@
 <?php
 
+// Reused from a different project doenst realy make sense in this project.
+// Maybe rework this if i find some time.
+
 class db {
     
     private $database;
