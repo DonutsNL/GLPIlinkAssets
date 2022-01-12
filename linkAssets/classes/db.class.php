@@ -1,7 +1,25 @@
 <?php
 
-// Reused from a different project doenst realy make sense in this project.
-// Maybe rework this if i find some time.
+/**
+ * Support class to deal with database stuff
+ * not originally written for this application
+ * might want to rework this someday. 
+ *
+ * Tested with PHP version 7.3
+ *
+ * LICENSE: GPLv2
+ *
+ * @category   CategoryName
+ * @package    linkAssets:db
+ * @author     DonutsNL
+ * @copyright  2022
+ * @license    GPLv2
+ * @version    $Id$
+ * @link       https://github.com/DonutsNL/GLPIlinkAssets/
+ * @see        
+ * @since      
+ * @deprecated 
+ */
 
 class db {
     
