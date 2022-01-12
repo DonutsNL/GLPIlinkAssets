@@ -1,4 +1,24 @@
 <?php
+/**
+ * linkAssets script will use the names and ip's from the GLPI assets Computers
+ * to find hostnames and IPs in the ticket content or title. If a match is found
+ * it will automatically link the asset as an item on the ticket.
+ *
+ * Tested with PHP version 7.3
+ *
+ * LICENSE: GPLv2
+ *
+ * @category   CategoryName
+ * @package    LinkAssets
+ * @author     DonutsNL
+ * @copyright  2022
+ * @license    GPLv2
+ * @version    $Id$
+ * @link       https://github.com/DonutsNL/GLPIlinkAssets/
+ * @see        
+ * @since      
+ * @deprecated 
+ */
 
 
 $app = new linkAssets();
