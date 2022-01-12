@@ -1,6 +1,6 @@
 # GLPI linkTicketsToAssets using asset pattern matching
 
-This script will do the following; 
+# This script will do the following; 
 
 1. Build an array of all available asset hostnames and (if available) IP addresses.
 2. Build an array of all ticket (initial content and title);
@@ -10,7 +10,7 @@ This script will do the following;
 
 
 
-INSTALLATION;
+# INSTALLATION;
 
 0. Download the linkAssets folder and put is somewhere on a PHP enabled webserver that has access to the GLPI database. I do not recommend putting this inside the GLPI folders, but that would actually work. 
 
