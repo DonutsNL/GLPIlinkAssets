@@ -15,11 +15,11 @@ Tested against : GLPI version 9.5.6.
 
 # INSTALLATION;
 
-##[STEP1]
+[STEP1]
 - Download the linkAssets folder and put is somewhere on a PHP enabled webserver that has access to the GLPI database. I do not recommend putting this inside the GLPI folders, but that would actually work. 
 
 
-##[STEP2]
+[STEP2]
 - Add the following new table inside the target GLPI database; Use the mysql cli to do so.
 
 ```SQL
@@ -34,13 +34,13 @@ create table amis_tickets_assets_link(
 ```
 
 
-##[STEP3]
+[STEP3]
 - Open the index.php file and update the database connection data in the constructor to match your environment.
 ![image](https://user-images.githubusercontent.com/97617761/149178469-bdeaadd2-3a8a-4066-b256-3d341cc86970.png)
 
 
-##[STEP4]
+[STEP4]
 - Open the the index.php file in either Edge, Chrome or Brave (my fav). Dont use firefox. It handles event streams like file downloads and will not work. Then watch the magic happen :)
 ![image](https://user-images.githubusercontent.com/97617761/149177358-b78e0372-75bc-41c1-9cd6-03d2de5c2bf9.png) 
 
-###Enjoy!
+Enjoy!
