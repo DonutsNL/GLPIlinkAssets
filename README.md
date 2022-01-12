@@ -23,7 +23,7 @@ Tested against : GLPI version 9.5.6.
 - Add the following new table inside the target GLPI database; Use the mysql cli to do so.
 
 ```SQL
-create table amis_tickets_assets_link(
+create table linkAssetsProcessed(
  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
  ticket_id INT NOT NULL,
  computer_id INT NOT NULL,
