@@ -22,14 +22,14 @@ Tested against : GLPI version 9.5.6.
 [STEP2]
 - Add the following new table inside the target GLPI database; Use the mysql cli to do so.
 
-create table amis_tickets_assets_link(
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-ticket_id INT NOT NULL,
-computer_id INT NOT NULL,
-hit INT NOT NULL,
-hittype VARCHAR(50),
-keyword VARCHAR(100)
-);
+'create table amis_tickets_assets_link('
+' id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+' ticket_id INT NOT NULL,'
+' computer_id INT NOT NULL,'
+' hit INT NOT NULL,'
+' hittype VARCHAR(50),'
+' keyword VARCHAR(100)'
+');'
 
 
 [STEP3]
