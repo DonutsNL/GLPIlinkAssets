@@ -6,7 +6,7 @@ $app = new linkAssets();
 
 class linkAssets{
 
-	private $limitTickets 	= 100;
+	private $limitTickets 		= 100;
 	private $DB 			= null;
 	private $assets 		= array();
 	private $tickets 		= array();
