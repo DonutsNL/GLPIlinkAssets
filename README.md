@@ -1,5 +1,8 @@
 # GLPI linkTicketsToAssets using asset pattern matching
 
+Tested against : GLPI version 9.5.6. 
+[https://glpi-project.org/downloads/]
+
 # This script will do the following; 
 
 1. Build an array of all available asset hostnames and (if available) IP addresses.
