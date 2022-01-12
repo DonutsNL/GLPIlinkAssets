@@ -1,4 +1,4 @@
-# GLPIlinkAssets
+# GLPI linkTicketsToAssets using asset pattern matching
 
 This script will do the following; 
 
