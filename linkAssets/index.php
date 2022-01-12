@@ -120,7 +120,6 @@ class linkAssets{
         	$title		= $row['name'];
         	$content 	= $row['content'];
 	
-	        	//$this->tickets[$row['tid']]['search'] 	=  $this->buildArray($title, $content);;
 	        $this->tickets[$row['tid']]['raw'] 	=  $row['content'];
 			$this->tickets[$row['tid']]['name']	=  $row['name'];
 			$this->tickets[$row['tid']]['ticketid'] =  $row['tid'];
@@ -275,7 +274,7 @@ class linkAssets{
 				// do nothing asset allready linked :)
 			}else{
 				// Perform the actual link and update link table.
-				$sql = "INSERT INTO amis_tickets_assets_link(ticket_id, computer_id, hit, hittype, keyword) 
+				$sql = "INSERT INTO linkAssetsProcessed(ticket_id, computer_id, hit, hittype, keyword) 
 						VALUES('$ticketId',0,0,'$reason','none')";
 				if($result = $this->DB->query($sql)){
 					return true;
@@ -307,7 +306,7 @@ class linkAssets{
 				$sql[] = "INSERT INTO glpi_items_tickets(itemtype, items_id, tickets_id) 
 							VALUES('Computer','$assetId','$ticketId')";
 
-				$sql[] = "INSERT INTO amis_tickets_assets_link(ticket_id, computer_id, hit, hittype, keyword) 
+				$sql[] = "INSERT INTO linkAssetsProcessed(ticket_id, computer_id, hit, hittype, keyword) 
 							VALUES('$ticketId','$assetId',1,'$hit','{$this->assets[$assetId]['host']}')";
 				
 				foreach($sql as $key => $query){
@@ -349,13 +348,5 @@ class linkAssets{
 		$str =  strtolower($str);
 		$str =  trim($str);
 		return $str;
-	}
-
-	private function buildArray($a, $b){
-    		if(!is_array($a)){$a = explode(' ', $a);}
-    		if(!is_array($b)){$b = explode(' ', $b);}
-    		$work = array_merge($a, $b);
-    		$work = array_unique($work, SORT_STRING);
-    		return $work;
 	}
 }
